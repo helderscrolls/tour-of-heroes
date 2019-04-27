@@ -6,8 +6,9 @@ import { Hero } from 'src/app/classes/hero';
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.scss']
 })
-export class HeroesComponent {
 
+export class HeroesComponent {
+  
   hero: Hero = {
     id: 1,
     name: 'Windstorm',
