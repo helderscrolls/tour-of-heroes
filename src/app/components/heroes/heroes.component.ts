@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+
 import { Hero } from 'src/app/classes/hero';
-import { HEROES } from '../../mocks/mock-heroes';
+import { HeroService } from '../../services/hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -10,7 +11,7 @@ import { HEROES } from '../../mocks/mock-heroes';
 
 export class HeroesComponent {
 
-  heroes = HEROES;
+  heroes: Hero[]; 
 
   selectedHero: Hero;
   onSelect(hero: Hero): void {
@@ -18,6 +19,6 @@ export class HeroesComponent {
   };
 
 
-  constructor() { }
+  constructor(private heroService:HeroService) { }
 
 }
