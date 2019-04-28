@@ -34,7 +34,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
       InMemoryDataService, { dataEncapsulation: false }
     )    
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
