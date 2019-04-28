@@ -3,6 +3,7 @@ import { Observable, of } from 'rxjs';
 
 import { Hero } from '../classes/hero';
 import { HEROES } from '../mocks/mock-heroes';
+import { MessageService } from '../services/message.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +14,5 @@ export class HeroService {
     return of(HEROES);
   }
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 }
